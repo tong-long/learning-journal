@@ -104,7 +104,7 @@ git push
 
 \##  Step 3: 总结 
 
-```flowchart LR 
+flowchart LR 
 
 &nbsp;   A\[工作区<br>修改文件] --> B\[暂存区<br>git add]
 
@@ -112,9 +112,8 @@ git push
 
 &nbsp;   C --> D\[远程仓库<br>git push]
 
-&nbsp;   D -.->|git clone| A
+&nbsp;   D -.->|git clone| A 
 
-```
 
 1、git add: 将工作区的更改"打包"到暂存区 
 
