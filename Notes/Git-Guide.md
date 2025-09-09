@@ -66,10 +66,13 @@ git push
 >验证: 完成推送后，刷新 GitHub 仓库页面，您将看到本地添加的内容已同步到远程仓库 
 
 ##  Step 3: 总结 
+```mermaid
 flowchart LR
-    A[工作区] -- git add --> B[暂存区]
-    B -- git commit --> C[本地仓库]
-    C -- git push --> D[远程仓库]
+    A[工作区<br>修改文件] --> B[暂存区<br>git add]
+    B --> C[本地仓库<br>git commit]
+    C --> D[远程仓库<br>git push]
+    D -.->|git clone| A
+```
 
 *1、git add*: 将工作区的更改"打包"到暂存区 
 
